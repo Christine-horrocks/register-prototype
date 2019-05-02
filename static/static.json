@@ -1,0 +1,40 @@
+{
+    "fields": [
+        {
+            "name": "local-plan",
+            "title": "Local plan",
+            "description": "A unique identifier for the local plan",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "organisation",
+            "title": "Organisation",
+            "description": "A unique identifier for each organisation, e.g. local-authority:DAC",
+            "constraints": {
+                "required": true,
+                "pattern": "\\S+:\\S+"
+            }
+        },
+        {
+            "name": "entry-date",
+            "title": "Entry date",
+            "description": "The date that the record was created",
+            "type": "date",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "state",
+            "title": "State",
+            "description": "The current state of the local plan",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        }
+      ]
+}
